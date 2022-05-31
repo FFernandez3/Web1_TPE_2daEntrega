@@ -4,19 +4,30 @@ body {
     margin: 0;
     text-align: justify;  
 }
+
 header{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
+    text-shadow: 2px 2px 1px black;
     background-image: url(../img/fondo.jpg); 
-    /* background-size: cover; */ /*si quiero que cubra el header se muestra una parte de la img*/
-    /* background-position: center;  */
-    background-size: 100%; /*si quiero que se mueste toda queda bajo*/
-    background-position: top;
-    background-repeat: no-repeat;/*ajustar tamanio*/
+    height: 100px; /*agrande el background
+    background-size: cover;  /*si quiero que cubra el header se muestra una parte de la img*/
+    /* background-position: center; 
+    background-size: 100%; /*si quiero que se mueste toda queda bajo
+    /*background-position: top;*/
+    background-repeat: no-repeat;/*ajustar tamanio*/ 
 }
+
+.nombrePagina {
+    margin-top: 0;/*saque borde superior blanco*/
+    margin-bottom: 0;
+    text-align: center;
+}
+
 span.coreano {
     font-family: 'Noto Serif KR', serif;
 }
+
 #btn_menu, ul.navigation{
     color: white; 
     text-transform: uppercase; 
@@ -27,6 +38,7 @@ ul.navigation{
     list-style: none;
     display: none;
 }
+
 ul.navigation.show {
     display: flex;
     flex-direction: column;
@@ -34,6 +46,23 @@ ul.navigation.show {
 a{
     text-decoration: none;
 }
+/*--------- Estilos Formulario----------*/
+.formulario {
+    border: 3px solid black;
+    margin: 20px;
+}
+form .camposForm {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    font-size: 20px;
+}
+.inputForm {
+    border: none;
+    border-bottom: 1px solid #45484a;
+    font-size: 18px;
+}
+/*---------- Estilos Footer------------*/
 footer{
    display: block;
 }
