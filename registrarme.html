@@ -11,9 +11,9 @@
 <body>
     <header>
         <h1 class="nombrePagina"><span class="coreano"> 김치 </span> para dos</h1>
+        <a id="btn_menu">menu</a> 
     </header>
     <nav> 
-        <a id="btn_menu">menu</a>    
         <ul class="navigation">
             <li> <a href="index.html">Inicio</a></li>
             <li><a href="recomendados.html">Recomendados</a></li>
@@ -37,7 +37,22 @@
         <div class="camposForm">
             <label for="">Mensaje</label>
             <textarea class="inputForm" name="mensaje" id="" cols="30" rows="10"></textarea>
-        </div>   
+        </div>  
+        <div class="captcha">
+            <h3>Captcha</h3>
+            <p class="indicaciones">Ingresa el número que aparece a continuación</p>
+            <div id="aleatorio"></div>
+            <div class="numeroIngresado">
+                <input class="inputForm" id="resultadoUsuario" type="number" name="number" value="" placeholder="Ingrese captcha"
+                    required>
+                <button id="comprobar">Comprobar</button>
+                <button id="nuevoCaptcha">Cargar otra vez</button>
+            </div>
+            <div id="resultado">Resultado</div>
+        </div>
+        <div class="buttonEnviar">
+            <button id="enviar"type="submit">Enviar</button>
+        </div> 
     </form>     
 
     <footer>

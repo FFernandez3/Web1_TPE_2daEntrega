@@ -61,7 +61,16 @@ form .camposForm {
     border: none;
     border-bottom: 1px solid #45484a;
     font-size: 18px;
+}/*--------- Estilos Captcha-----------*/
+ .captcha {
+    padding: 20px;
 }
+.buttonEnviar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 /*---------- Estilos Footer------------*/
 footer{
    display: block;
@@ -77,15 +86,24 @@ footer{
 }
 
 @media only screen and (min-width: 660px){
+    body {
+        border: 20px solid lightpink;
+    }
     #btn_menu { /*oculto boton*/
         display: none;
     }
     ul.navigation { 
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;       
     }
+ /*------Estilos Formulario----------*/ 
+ .formulario {
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+    
+}
     .copyright{
         width: 60%;
     }
