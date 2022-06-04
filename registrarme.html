@@ -22,38 +22,28 @@
     </nav>
 
     <form class="formulario">
-        <div class="camposForm">
-            <label for="">Nombre</label>
-            <input class="inputForm" type="text" name="nombre" value=""  required/>
+        <label class="label" for="">Nombre</label>
+        <input  type="text" name="nombre" value=""  required/>
+        <label class="label" for="">Apellido</label>
+        <input  type="text" name="apellido" value="" />
+        <label class="label" for="">Email</label>
+        <input  type="email" name="email" value="" required/>
+        <label class="label" for="">Mensaje</label>
+        <textarea  name="mensaje" id="" cols="30" rows="10"></textarea>
+     <div class="captcha">
+        <h3>Captcha</h3>
+        <p class="indicaciones">Ingresa el número que aparece a continuación</p>
+        <div id="aleatorio"></div>
+        <div class="numeroIngresado">
+            <input class="inputForm" id="resultadoUsuario" type="number" name="number" value="" placeholder="Ingrese captcha"
+                required>
+            <button class="button" id="comprobar">Comprobar</button>
+            <button class="button" id="nuevoCaptcha">Cargar otra vez</button>
         </div>
-        <div class="camposForm">
-            <label for="">Apellido</label>
-            <input class="inputForm" type="text" name="apellido" value="" />
-        </div>
-        <div class="camposForm">
-            <label for="">Email</label>
-            <input class="inputForm" type="email" name="email" value="" required/>
-        </div>
-        <div class="camposForm">
-            <label for="">Mensaje</label>
-            <textarea class="inputForm" name="mensaje" id="" cols="30" rows="10"></textarea>
-        </div>  
-        <div class="captcha">
-            <h3>Captcha</h3>
-            <p class="indicaciones">Ingresa el número que aparece a continuación</p>
-            <div id="aleatorio"></div>
-            <div class="numeroIngresado">
-                <input class="inputForm" id="resultadoUsuario" type="number" name="number" value="" placeholder="Ingrese captcha"
-                    required>
-                <button id="comprobar">Comprobar</button>
-                <button id="nuevoCaptcha">Cargar otra vez</button>
-            </div>
-            <div id="resultado">Resultado</div>
-        </div>
-        <div class="buttonEnviar">
-            <button id="enviar"type="submit">Enviar</button>
-        </div> 
-    </form>     
+        <div id="resultado">Resultado</div>
+        <button class="buttonEnviar" id="enviar"type="submit">Enviar</button>
+     </div>
+    </form> 
 
     <footer>
         <div class="copyright"> <h4>Kimchi para dos 2022 | All rigths reserved | This is a fan site and makes no profit of the usage of any

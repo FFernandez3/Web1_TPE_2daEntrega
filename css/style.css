@@ -49,26 +49,47 @@ a{
 /*--------- Estilos Formulario----------*/
 .formulario {
     border: 3px solid black;
-    margin: 20px;
-}
-form .camposForm {
-    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display:flex;
     flex-direction: column;
-    margin: 2rem;
-    font-size: 20px;
+    flex-wrap: wrap;
+    align-items: left;
+}
+input , textarea {
+    width: 90%;
+    height: 30px;
+    margin: o.5rem;
+}
+textarea {
+    height: 50%;
 }
 .inputForm {
     border: none;
     border-bottom: 1px solid #45484a;
     font-size: 18px;
 }/*--------- Estilos Captcha-----------*/
- .captcha {
-    padding: 20px;
+.inputForm{
+    width: 30%;
+
 }
-.buttonEnviar {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+.captcha {
+    max-width: 546px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.button{
+    height: 30px;
+
+}
+.buttonEnviar{
+   height: 40px;
+   width: 100px;
+
 }
 
 /*---------- Estilos Footer------------*/
@@ -98,12 +119,31 @@ footer{
         flex-wrap: wrap;       
     }
  /*------Estilos Formulario----------*/ 
- .formulario {
+ .formulario { 
     margin: 0 auto;
     width: 60%;
     padding: 10px;
     
 }
+/*.formulario .camposForm {
+    margin-left: 30px;
+}*/
+  .formulario .inputForm {
+    width: 90%;
+    height: 40px; 
+}
+.formulario .textAreaForm {
+    width: 90%;
+    resize: none;
+    padding-right: 15px;
+}
+div.captcha{
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 85%;  
+}
+/*--------Estilos Footer-----------*/
     .copyright{
         width: 60%;
     }
