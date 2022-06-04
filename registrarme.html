@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kimchi para dos</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="nombrePagina"><span class="coreano"> 김치 </span> para dos</h1>
+        <a id="btn_menu">menu</a> 
+    </header>
+    <nav> 
+        <ul class="navigation">
+            <li> <a href="index.html">Inicio</a></li>
+            <li><a href="recomendados.html">Recomendados</a></li>
+            <li> <a href="registrarme.html" target="_blanck">Registrarme</a></li>
+        </ul>
+    </nav>
+
+    <form class="formulario">
+        <label class="label" for="">Nombre</label>
+        <input  type="text" name="nombre" value=""  required/>
+        <label class="label" for="">Apellido</label>
+        <input  type="text" name="apellido" value="" />
+        <label class="label" for="">Email</label>
+        <input  type="email" name="email" value="" required/>
+        <label class="label" for="">Mensaje</label>
+        <textarea  name="mensaje" id="" cols="30" rows="10"></textarea>
+     <div class="captcha">
+        <h3>Captcha</h3>
+        <p class="indicaciones">Ingresa el número que aparece a continuación</p>
+        <div id="aleatorio"></div>
+        <div class="numeroIngresado">
+            <input class="inputForm" id="resultadoUsuario" type="number" name="number" value="" placeholder="Ingrese captcha"
+                required>
+            <button class="button" id="comprobar">Comprobar</button>
+            <button class="button" id="nuevoCaptcha">Cargar otra vez</button>
+        </div>
+        <div id="resultado">Resultado</div>
+        <button class="buttonEnviar" id="enviar"type="submit">Enviar</button>
+     </div>
+    </form> 
+
+    <footer>
+        <div class="copyright"> <h4>Kimchi para dos 2022 | All rigths reserved | This is a fan site and makes no profit of the usage of any
+             images or logos.
+             </h4>
+         </div>
+         <div class="redes">
+             <a href=https://es-la.facebook.com/ target="_blank"><img src="img/facebook.png" alt="icono Facebook"></a>
+             <a href=https://www.instagram.com target="_blank"> <img src="img/instagram.jpg" alt="icono instagram"></a>
+          </div>
+     </footer>
+     <script src="js/script.js"></script>
+</body>
+</html>

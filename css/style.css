@@ -5,19 +5,30 @@ body {
     text-align: justify;
   
 }
+
 header{
-    font-size: 25px;
+    font-size: 20px;
     color: white;
+    text-shadow: 2px 2px 1px black;
     background-image: url(../img/fondo.jpg); 
-    /* background-size: cover; */ /*si quiero que cubra el header se muestra una parte de la img*/
-    /* background-position: center;  */
-    background-size: 100%; /*si quiero que se mueste toda queda bajo*/
-    background-position: top;
-    background-repeat: no-repeat;/*ajustar tamanio*/
+    height: 100px; /*agrande el background
+    background-size: cover;  /*si quiero que cubra el header se muestra una parte de la img*/
+    /* background-position: center; 
+    background-size: 100%; /*si quiero que se mueste toda queda bajo
+    /*background-position: top;*/
+    background-repeat: no-repeat;/*ajustar tamanio*/ 
 }
+
+.nombrePagina {
+    margin-top: 0;/*saque borde superior blanco*/
+    margin-bottom: 0;
+    text-align: center;
+}
+
 span.coreano {
     font-family: 'Noto Serif KR', serif;
 }
+
 #btn_menu, ul.navigation{
     color: white; 
     text-transform: uppercase; 
@@ -28,6 +39,7 @@ ul.navigation{
     list-style: none;
     display: none;
 }
+
 ul.navigation.show {
     display: flex;
     flex-direction: column;
@@ -35,6 +47,53 @@ ul.navigation.show {
 a{
     text-decoration: none;
 }
+/*--------- Estilos Formulario----------*/
+.formulario {
+    border: 3px solid black;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+}
+input , textarea {
+    width: 90%;
+    height: 30px;
+    margin: o.5rem;
+}
+textarea {
+    height: 50%;
+}
+.inputForm {
+    border: none;
+    border-bottom: 1px solid #45484a;
+    font-size: 18px;
+}/*--------- Estilos Captcha-----------*/
+.inputForm{
+    width: 30%;
+
+}
+.captcha {
+    max-width: 546px;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.button{
+    height: 30px;
+
+}
+.buttonEnviar{
+   height: 40px;
+   width: 100px;
+
+}
+
+/*---------- Estilos Footer------------*/
 footer{
    display: block;
 }
@@ -49,15 +108,43 @@ footer{
 }
 
 @media only screen and (min-width: 660px){
+    body {
+        border: 20px solid lightpink;
+    }
     #btn_menu { /*oculto boton*/
         display: none;
     }
     ul.navigation { 
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;       
     }
+ /*------Estilos Formulario----------*/ 
+ .formulario { 
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+    
+}
+/*.formulario .camposForm {
+    margin-left: 30px;
+}*/
+  .formulario .inputForm {
+    width: 90%;
+    height: 40px; 
+}
+.formulario .textAreaForm {
+    width: 90%;
+    resize: none;
+    padding-right: 15px;
+}
+div.captcha{
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 85%;  
+}
+/*--------Estilos Footer-----------*/
     .copyright{
         width: 60%;
     }
