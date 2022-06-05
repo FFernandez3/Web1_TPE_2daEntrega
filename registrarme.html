@@ -23,13 +23,13 @@
 
     <form class="formulario">
         <label class="label" for="">Nombre</label>
-        <input  type="text" name="nombre" value=""  required/>
+        <input class="inputRegistrarme" type="text" name="nombre" value=""  required/>
         <label class="label" for="">Apellido</label>
-        <input  type="text" name="apellido" value="" />
+        <input class="inputRegistrarme" type="text" name="apellido" value="" />
         <label class="label" for="">Email</label>
-        <input  type="email" name="email" value="" required/>
+        <input class="inputRegistrarme" type="email" name="email" value="" required/>
         <label class="label" for="">Mensaje</label>
-        <textarea  name="mensaje" id="" cols="30" rows="10"></textarea>
+        <textarea  class="textArea" name="mensaje" id="" cols="30" rows="10"></textarea>
      <div class="captcha">
         <h3>Captcha</h3>
         <p class="indicaciones">Ingresa el número que aparece a continuación</p>
@@ -38,7 +38,7 @@
             <input class="inputForm" id="resultadoUsuario" type="number" name="number" value="" placeholder="Ingrese captcha"
                 required>
             <button class="button" id="comprobar">Comprobar</button>
-            <button class="button" id="nuevoCaptcha">Cargar otra vez</button>
+            <button class="button" id="nuevoCaptcha">Recargar</button>
         </div>
         <div id="resultado">Resultado</div>
         <button class="buttonEnviar" id="enviar"type="submit">Enviar</button>
@@ -55,6 +55,8 @@
              <a href=https://www.instagram.com target="_blank"> <img src="img/instagram.jpg" alt="icono instagram"></a>
           </div>
      </footer>
+     <script src="js/captcha.js"></script>
      <script src="js/script.js"></script>
 </body>
+
 </html>
