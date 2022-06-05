@@ -3,7 +3,6 @@ body {
     font-family: 'Noto Serif', serif;
     margin: 0;
     text-align: justify;
-  
 }
 
 header{
@@ -46,6 +45,10 @@ ul.navigation.show {
 }
 a{
     text-decoration: none;
+}
+/*--------- Estilos Index---------------*/
+article.articulo{
+    margin: 3%;
 }
 /*--------- Estilos Formulario----------*/
 .formulario {
@@ -91,6 +94,40 @@ textarea {
    height: 40px;
    width: 100px;
 
+}
+/*---------- Estilos Tabla------------*/
+table#tabla {
+    width: 100%;
+   display: block; 
+    overflow-x: auto; 
+}
+thead {
+    font-family: 'Square Peg', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #45484a; 
+}
+table tr td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+form.formTabla {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    
+    
+}
+form.formTabla input {
+    margin: 0 auto;
+}
+input:focus { /*se aplica a todos los inputs inclusive al formulario de registro*/
+    border:  1px solid black;
 }
 
 /*---------- Estilos Footer------------*/
