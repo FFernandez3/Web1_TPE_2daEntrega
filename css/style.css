@@ -42,6 +42,7 @@ ul.navigation{
 ul.navigation.show {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -74,6 +75,7 @@ article.articulo{
 }
 .formulario .textArea {
     height: 50%;
+    resize: none;
 }
 /*--------- Estilos Captcha-----------*/
 .ocultar {
@@ -100,6 +102,10 @@ article.articulo{
    height: 40px;
    width: 100px;
 
+}
+.button, .buttonEnviar {
+    background-color: lightpink;
+    border-radius: 5px;
 }
 /*---------- Estilos Tabla------------*/
 table#tabla {
@@ -141,13 +147,18 @@ footer{
    display: block;
 }
 .copyright {
+     margin: 10px ;
      color: gray;
      font-size: 12px;  
+}
+.redes {
+    text-align: center;
 }
 .redes img {
     height: 30px;
     border-radius: 30px; 
     /*colocar en la mitad*/  
+
 }
 
 @media only screen and (min-width: 660px){
@@ -160,25 +171,26 @@ footer{
     ul.navigation { 
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;       
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+        background-color: lightpink;      
+        margin-top: 0;
+        padding-top: 10px;
+        height: 40px;
     }
  /*------Estilos Formulario----------*/ 
     .formulario { 
         width: 50%;
         border: 3px solid black;
+        padding-left: 30px;
     }
-   .formulario .inputForm {
+    .inputRegistrarme {
         width: 90%;
         height: 40px; 
         margin-bottom: 10px;
     }
-   .formulario .textAreaForm {
-        resize: none;
-        padding-right: 15px;
-    }
     div.captcha{
         border: 2px solid black;
-      
     }
     .numeroIngresado {
         text-align: center;
