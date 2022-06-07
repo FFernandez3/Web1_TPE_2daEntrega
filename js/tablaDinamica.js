@@ -36,14 +36,16 @@ function iniciarPAgina () {
         let i =0;
         while(i<3){
             agregarRecomendacion();
-            i++;
+            i++;       
         }
         mostrarTabla();
+        
     }
 
     function borrarTabla() {
         tabla=[];
         mostrarTabla();
+       
     }
 
     function mostrarTabla() {
@@ -58,9 +60,9 @@ function iniciarPAgina () {
                                         <td>${elem.estado}</td>
                                     </tr>`                                     
         }
-        removerDatosInputs();
+       
     }
-    function removerDatosInputs(){
+    function removerDatosInputs(){ /*ver si puedo agregarlo en un set time out*/ 
         //console.log("se ejecuta remover");
         let genero=document.querySelector("#genero").value='';
         let titulo=document.querySelector("#titulo").value='';
@@ -69,4 +71,5 @@ function iniciarPAgina () {
         let estado=document.querySelector("#estado").value='';
        
     }
+   
 }
