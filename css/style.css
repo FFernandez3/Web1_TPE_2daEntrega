@@ -24,7 +24,7 @@ header{
 }
 .container {
     height: 100%;
-  background-color: white;
+    background-color: white;
 }
 
 .nombrePagina {
@@ -39,6 +39,7 @@ span.coreano {
 }
 
 #btn_menu, ul.navigation{
+    padding-left: 0;
     color: white; 
     text-transform: uppercase; 
     text-align: center;
@@ -142,23 +143,23 @@ input::selection, textarea::selection {
     align-items: center;
 
 }
-.button{
-    height: 30px;
-
-}
-.buttonEnviar{
-   height: 40px;
-   width: 100px;
+.captcha #aleatorio {
+    font-size: 30px;
 
 }
 .button, .buttonEnviar{
     background-color: lightpink;
     border-radius: 5px;
+    width: 30%;
+    height: auto;
 }
 /*---------- Estilos Tabla------------*/
+.nombreSeccion, #tabla {
+    padding-left: 10%;
+}
 table#tabla {
     width: 100%;
-    display: block; 
+    display: block;
     overflow-x: auto; 
     justify-content: center;
 }
@@ -178,7 +179,6 @@ form.formTabla/* , div.btns-tabla */ {
     width: 100%;
     justify-content: center;
     display: flex;
-    
     flex-wrap: wrap; 
     margin-top: 3%;   
 }
@@ -203,6 +203,9 @@ input:focus { /*se aplica a todos los inputs inclusive al formulario de registro
 }
 
 /*---------- Estilos Footer------------*/
+footer {
+    padding-top: 10px;
+}
 
 .copyright {
      margin: 10px ;
@@ -227,7 +230,7 @@ input:focus { /*se aplica a todos los inputs inclusive al formulario de registro
     #btn_menu { /*oculto boton*/
         display: none;
     }
-     nav li:hover{
+    nav li:hover{
         font-size: 18px;  
      }
     .container {
@@ -280,6 +283,11 @@ div.descripcionDrama {
         text-align: center;
         
     }
+/*--------Estilos Tabla------------*/  
+.container {
+    width: 50%;
+}
+    
 /*--------Estilos Footer-----------*/
     .copyright{
         width: 60%;
