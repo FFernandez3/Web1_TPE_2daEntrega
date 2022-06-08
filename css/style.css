@@ -15,11 +15,7 @@ header{
     color: white;
     text-shadow: 2px 2px 1px black;
     background-image: url(../img/fondo.jpg); 
-    height: auto; /*agrande el background
-    background-size: cover;  /*si quiero que cubra el header se muestra una parte de la img*/
-    /* background-position: center; 
-    background-size: 100%; /*si quiero que se mueste toda queda bajo
-    /*background-position: top;*/
+    height: auto; 
     background-repeat: no-repeat;/*ajustar tamanio*/ 
 }
 .container {
@@ -28,7 +24,7 @@ header{
 }
 
 .nombrePagina {
-    margin-top: 0;/*saque borde superior blanco*/
+    margin-top: 0;
     margin-bottom: 0;
     text-align: center;
 }
@@ -48,6 +44,7 @@ span.coreano {
 li a {
     color: #45484a;
     text-decoration: none;
+    
 }
 
 ul.navigation{
@@ -59,6 +56,8 @@ ul.navigation.show {
     display: flex;
     flex-direction: column;
     margin: 0;
+   
+    
 }
 
 /*--------- Estilos Index---------------*/
