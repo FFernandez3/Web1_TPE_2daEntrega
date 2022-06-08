@@ -41,6 +41,7 @@ span.coreano {
     text-align: center;
     /*colocarlos en la mitad de la pantalla*/
 }
+
 li a {
     color: #45484a;
     text-decoration: none;
@@ -88,6 +89,7 @@ img.imagen {
     height: 50%;
     width: 50%;
     border-radius: 5px;
+    
    
 }
 iframe{
@@ -97,7 +99,6 @@ iframe{
 
 /*--------- Estilos Formulario----------*/
 .formulario {
-    /*border: 3px solid black;*/
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
@@ -249,6 +250,7 @@ footer {
 img.imagen {
     height: 300px;
     width: 215px;  
+   
 }
 iframe {
     height: 15rem;
@@ -260,9 +262,15 @@ div.estreno{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
+    
 }
+
 div.descripcionDrama {
-    width: 60%;
+    width: 75%;
+  
+}
+div.container {
+    width: 70%;
 }
  /*------Estilos Formulario----------*/ 
     .formulario { 
@@ -295,6 +303,6 @@ div.descripcionDrama {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 2% 15%;
+        margin: 5% 15%;
     }
 }
