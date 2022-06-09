@@ -13,7 +13,7 @@ function iniciarPAgina () {
     document.querySelector("#btn-agregar"). addEventListener("click", agregarRecomendacion);
     document.querySelector("#btn-agregar3").addEventListener("click", agregar3);
     document.querySelector("#btn-borrar").addEventListener("click", borrarTabla);
-  
+    
     function agregarRecomendacion(){
         let genero=document.querySelector("#genero").value;
         let titulo=document.querySelector("#titulo").value;
@@ -39,13 +39,13 @@ function iniciarPAgina () {
             i++;       
         }
         mostrarTabla();
-        
+        document.querySelector(".formTabla").reset();
     }
 
     function borrarTabla() {
         tabla=[];
         mostrarTabla();
-       
+        document.querySelector(".formTabla").reset();
     }
 
     function mostrarTabla() {
@@ -60,16 +60,9 @@ function iniciarPAgina () {
                                         <td>${elem.estado}</td>
                                     </tr>`                                     
         }
-       
+        
     }
-    function removerDatosInputs(){ /*ver si puedo agregarlo en un set time out*/ 
-        //console.log("se ejecuta remover");
-        let genero=document.querySelector("#genero").value='';
-        let titulo=document.querySelector("#titulo").value='';
-        let año=document.querySelector("#año").value='';
-        let capitulos= document.querySelector("#capitulos").value='';
-        let estado=document.querySelector("#estado").value='';
-       
-    }
+   
+    
    
 }
