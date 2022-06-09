@@ -9,7 +9,7 @@ function iniciarPAgina () {
         estado: "finalizado"
     }
     ];
-
+    mostrarTabla();
     document.querySelector("#btn-agregar"). addEventListener("click", agregarRecomendacion);
     document.querySelector("#btn-agregar3").addEventListener("click", agregar3);
     document.querySelector("#btn-borrar").addEventListener("click", borrarTabla);
