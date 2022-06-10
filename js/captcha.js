@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", iniciarPAgina);
-function iniciarPAgina () {
+function iniciarPAgina() {
     "use strict";
     let btnCargar = document.querySelector("#nuevoCaptcha");
     let ingreso = document.querySelector("#resultadoUsuario");
@@ -11,10 +11,10 @@ function iniciarPAgina () {
     console.log("aplica ocultar boton");
     btnCargar.addEventListener("click", recargarValor);
 
-    function recargarValor () {
+    function recargarValor() {
         valorAletorio();
         ocultarBoton();
-        res.innerHTML="";
+        res.innerHTML = "";
     }
 
 
@@ -37,17 +37,17 @@ function iniciarPAgina () {
             }
             else {
                 res.innerHTML = "¡Incorrecto! Volve a intentarlo.";
-                ocultarBoton();        
+                ocultarBoton();
             }
-            
+
         }
         document.querySelector(".formulario").reset();
     }
 
-    function mostrarBoton(){
+    function mostrarBoton() {
         document.getElementById("enviar").classList.remove("ocultar");
     }
-    function ocultarBoton (){
+    function ocultarBoton() {
         document.getElementById("enviar").classList.add("ocultar");
     }
 }

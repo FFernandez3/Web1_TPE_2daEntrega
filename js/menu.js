@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", iniciarPAgina);
-function iniciarPAgina () {
+function iniciarPAgina() {
     "use strict";
     document.querySelector("#btn_menu").addEventListener("click", toggleMenu);
 

@@ -1,23 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+KR:wght@200&family=Square+Peg&display=swap');
+
 body {
     font-family: 'Noto Serif', serif;
     margin: 0;
+    padding: 0;
     text-align: justify;
-   
+    background-color: lightpink;
+
 }
- .container, footer, header {
+
+.container,
+footer,
+header {
     display: flex;
     flex-flow: column wrap;
-} 
-header{
+}
+
+header {
     font-family: 'Square Peg', cursive;
     font-size: 30px;
     color: white;
     text-shadow: 2px 2px 1px black;
-    background-image: url(../img/fondo.jpg); 
-    height: auto; 
-    background-repeat: no-repeat;/*ajustar tamanio*/ 
+    background-image: url(../img/fondo.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    /*ajustar tamanio*/
 }
+
 .container {
     height: 100%;
     background-color: white;
@@ -31,24 +40,24 @@ header{
 
 span.coreano {
     font-family: 'Noto Serif KR', serif;
-    
+
 }
 
-#btn_menu, ul.navigation{
+#btn_menu,
+ul.navigation {
     padding-left: 0;
-    color: white; 
-    text-transform: uppercase; 
+    color: white;
+    text-transform: uppercase;
     text-align: center;
-    /*colocarlos en la mitad de la pantalla*/
 }
 
 li a {
     color: #45484a;
     text-decoration: none;
-    
+
 }
 
-ul.navigation{
+ul.navigation {
     list-style: none;
     display: none;
 }
@@ -57,45 +66,56 @@ ul.navigation.show {
     display: flex;
     flex-direction: column;
     margin: 0;
-   
-    
+
+
 }
 
 /*--------- Estilos Index---------------*/
-article.articulo, .container{
-    margin: 1%;
+article.articulo,
+.container {
+    margin: 2%;
 }
+
 article.articulo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     border-bottom: 2px solid black;
 }
- h1.nombreSeccion, thead, h1.tituloPost {
+
+h1.nombreSeccion,
+thead,
+h1.tituloPost {
     color: #45484a;
     font-family: 'Square Peg', cursive;
     text-align: left;
 }
-h1.nombreSeccion, h1.tituloPost {
+
+h1.nombreSeccion,
+h1.tituloPost {
     font-size: 40px;
     margin: 0;
-    
+
 }
+
 h2.tituloDrama {
     font-size: 20px;
 }
+
 img.imagen {
     border-radius: 3%;
     height: 50%;
-    width: 50%;  
+    width: 50%;
 }
-iframe{
+
+iframe {
     height: 15rem;
     width: 100%;
-    margin-bottom: 3%;    
+    margin-bottom: 3%;
 }
-figure {   
-    margin: 0 auto;    
+
+figure {
+    margin: 0 auto;
 }
 
 /*--------- Estilos Formulario----------*/
@@ -104,12 +124,14 @@ figure {
     max-width: 80%;
     margin: 0 auto;
     padding: 1rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: left;
 }
-.inputRegistrarme , .textArea {
+
+.inputRegistrarme,
+.textArea {
     width: 90%;
     height: 40px;
     margin-top: 10px;
@@ -119,96 +141,111 @@ figure {
     font-size: 18px;
 
 }
+
 .formulario .textArea {
     height: 50%;
     resize: none;
 }
-input::selection, textarea::selection {
+
+input::selection,
+textarea::selection {
     background-color: #ffe0e9;
     color: #45484a;
 }
+
 /*--------- Estilos Captcha-----------*/
 .ocultar {
     display: none;
 }
-.numeroIngresado .inputForm{
+
+.numeroIngresado .inputForm {
     width: 30%;
     height: 35px;
 
 }
+
 .captcha {
     width: 90%;
     margin: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+
 .captcha #aleatorio {
     font-size: 30px;
 
 }
-.button, .buttonEnviar{
+
+.button,
+.buttonEnviar {
     background-color: lightpink;
     border-radius: 5px;
     width: 30%;
     height: auto;
 }
+
 /*---------- Estilos Tabla------------*/
-.nombreSeccion, #tabla {
-  /*   padding-left: 10%; */ /*lo saque para que quede alineado con el footer*/
-}
+
 table#tabla {
     width: 100%;
     display: block;
-    overflow-x: auto; 
+    overflow-x: auto;
     padding-bottom: 1%;
 
     justify-content: center;
 }
+
 thead {
     font-size: 30px;
-    font-weight: bold; 
+    font-weight: bold;
     width: 100%;
-   
+
 }
+
 table tr td {
     border: 2px solid black;
     border-collapse: collapse;
     text-align: center;
 }
 
-form.formTabla/* , div.btns-tabla */ {
+form.formTabla {
     width: 100%;
-    justify-content: center; 
+    justify-content: center;
     display: flex;
-    flex-wrap: wrap; 
-    margin-top: 1%;   
+    flex-wrap: wrap;
+    margin-top: 1%;
 }
 
-/* div.btns-tabla {
-    flex-direction: row;
-    display: flex; 
-    justify-content: center;
-} */
-#btn-agregar, #btn-agregar3, #btn-borrar{
-   width: 30%;
-   height: auto; 
-   margin-top: 2%;
-   
+.resaltado {
+    background-color: rgb(254, 220, 226);
+    font-weight: bold;
 }
-form.formTabla input/* , div.btns-tabla  */{
-   margin: 0 auto; /*esto centra los inputs*/
-   width: 100%;
+
+#btn-agregar,
+#btn-agregar3,
+#btn-borrar {
+    width: 30%;
+    height: auto;
+    margin-top: 2%;
+
 }
+
+form.formTabla input {
+    margin: 0 auto;
+    /*esto centra los inputs*/
+    width: 100%;
+}
+
 .inputsTabla {
-   /*  margin: 0 auto; */
-   width: 15rem;
-   margin-right: 4%;
-    
+    width: 15rem;
+    margin-right: 4%;
+
 }
-input:focus { 
-    border:  1px solid black;
+
+input:focus {
+    border: 1px solid black;
 }
 
 /*---------- Estilos Footer------------*/
@@ -217,118 +254,141 @@ footer {
 }
 
 .copyright {
-     margin: 10px ;
-     color: gray;
-     font-size: 12px; 
-     width: fit-content; 
+    margin: 10px;
+    color: gray;
+    font-size: 12px;
+    width: fit-content;
 }
+
 .redes {
     text-align: center;
 }
+
 .redes img {
     height: 30px;
-    border-radius: 30px; 
-    /*colocar en la mitad*/  
+    border-radius: 30px;
 
 }
 
-@media only screen and (min-width: 660px){
+@media only screen and (min-width: 660px) {
     body {
         border: 20px solid lightpink;
+        background-color: white;
     }
-    #btn_menu { /*oculto boton*/
+
+    #btn_menu {
+        /*oculto boton*/
         display: none;
     }
-    nav li:hover{
-        font-size: 18px;  
-     }
-    ul.navigation { 
+
+    nav li:hover {
+        font-size: 18px;
+    }
+
+    ul.navigation {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        background-color: lightpink;      
+        background-color: lightpink;
         margin-top: 0;
         padding-top: 10px;
         height: 40px;
     }
-/*------Estilos Index----------*/ 
-img.imagen {
-    height: 300px;
-    width: 215px;  
-   
-}
-iframe {
-    width: 25rem;
-    
-}
-div.estreno{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;    
-}
 
-div.descripcionDrama {
-    width: 75%;
-  
-}
-div.container {
-    width: 70%;
-    margin: 0% 15%;
-}
- /*------Estilos Formulario----------*/ 
-    .formulario { 
+    /*------Estilos Index----------*/
+    img.imagen {
+        height: 300px;
+        width: 215px;
+
+    }
+
+    iframe {
+        width: 25rem;
+
+    }
+
+    div.estreno {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    div.descripcionDrama {
+        width: 75%;
+
+    }
+
+    div.container {
+        width: 70%;
+        margin: 0% 15%;
+    }
+
+    /*------Estilos Formulario----------*/
+    .formulario {
         width: 50%;
         border: 3px solid black;
         padding-left: 30px;
     }
+
     .inputRegistrarme {
         width: 90%;
-        height: 40px; 
+        height: 40px;
         margin-bottom: 10px;
     }
-    div.captcha{
+
+    div.captcha {
         border: 2px solid black;
     }
+
     .numeroIngresado {
         text-align: center;
-        
+
     }
-/*--------Estilos Tabla------------*/  
-table#tabla {
-   display: revert;/*el ancho de la tabla vacia es el del container*/
-}
-form.formTabla{
-    flex-direction: row;
-    margin: 0 auto;
-    /* justify-content: center; */ /*me centra los imputs y los boones al medio*/
-    align-items: left;
-}
-.inputsTabla, .btns-tabla{
-    display: flex;
-    flex-direction: column;
-    padding-right: 7%;
-}
-.inputsTabla {
-    width: 45%;
-}
 
-.containerTabla{
-    align-items: center;
-}
-.btns-tabla {
-    width: 5rem;
-}
+    /*--------Estilos Tabla------------*/
+    table#tabla {
+        display: revert;
+        /*el ancho de la tabla vacia es el del container*/
+    }
 
-#btn-agregar, #btn-agregar3, #btn-borrar {
-    width: 100%;
-}
-    
-/*--------Estilos Footer-----------*/
-    .copyright{
+    form.formTabla {
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: left;
+    }
+
+    .inputsTabla,
+    .btns-tabla {
+        display: flex;
+        flex-direction: column;
+        padding-right: 7%;
+    }
+
+    .inputsTabla {
+        width: 45%;
+    }
+
+    .containerTabla {
+        align-items: center;
+    }
+
+    .btns-tabla {
+        width: 5rem;
+    }
+
+    #btn-agregar,
+    #btn-agregar3,
+    #btn-borrar {
+        width: 100%;
+    }
+
+    /*--------Estilos Footer-----------*/
+    .copyright {
         width: 60%;
     }
+
     footer {
         flex-direction: row;
         justify-content: space-between;
